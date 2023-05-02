@@ -17,7 +17,9 @@ Installation
 
 Building
 ------
-    yarn compile
+    yarn compile 
+or
+    yarn build (via hardhat)
 
 Testing
 -------
