@@ -53,6 +53,10 @@ module.exports = {
       gasPrice: 120 * 1000000000,
       chainId: 1,
     },
+    "dev-localhost": {
+      url: `http://127.0.0.1:4242`,
+      accounts
+    },
     localhost: {
       live: false,
       saveDeployments: true,
@@ -244,8 +248,8 @@ module.exports = {
   },
   preprocess: {
     eachLine: removeConsoleLog(
-      (bre) =>
-        bre.network.name !== "hardhat" && bre.network.name !== "localhost"
+        (bre) =>
+            bre.network.name !== "hardhat" && bre.network.name !== "localhost"
     ),
   },
   solidity: {
@@ -270,6 +274,15 @@ module.exports = {
       },
       {
         version: "0.7.6",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
+      {
+        version: "0.8.9",
         settings: {
           optimizer: {
             enabled: true,
