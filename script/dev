@@ -1,5 +1,15 @@
 npx hardhat compile
 
+npx hardhat --network dev-localhost deploy --tags PythOracleAdapterFactory
+npx hardhat --network dev-localhost deploy --tags PriceOracle
+npx hardhat --network dev-localhost deploy --tags TripleSlopeRateModel
+npx hardhat --network dev-localhost deploy --tags RewardDistributor
+
+npx hardhat --network dev-localhost deploy --tags Joetroller
+
+npx hardhat --network dev-localhost deploy --tags JAvaxDelegate
+npx hardhat --network dev-localhost deploy --tags jAVAX
+
 npx hardhat --network dev-localhost deploy --tags JCollateralCapErc20Delegate
 npx hardhat --network dev-localhost deploy --tags jUSDC
 npx hardhat --network dev-localhost deploy --tags jUSDT
