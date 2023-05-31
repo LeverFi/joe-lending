@@ -1,4 +1,4 @@
-dconst USDC = new Map();
+const USDC = new Map();
 USDC.set("4", "0x4dbcdf9b62e891a7cec5a2568c3f4faf9e8abe2b");
 USDC.set("43114", "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664");
 USDC.set("245022926", "0x512E48836Cd42F3eB6f50CEd9ffD81E0a7F15103");
